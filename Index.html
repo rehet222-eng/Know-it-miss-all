@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miss Know It All | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brandBlue: '#0052FF',
+                        brandOrange: '#FF6B00',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; transition: 0.3s ease; }
+    </style>
+</head>
+<body class="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">
+
+    <nav class="flex justify-between items-center p-6 max-w-7xl mx-auto">
+        <div class="text-xl font-extrabold text-brandBlue">MKIA.</div>
+        <div class="flex items-center space-x-6">
+            <button onclick="document.documentElement.classList.toggle('dark')" class="p-2 rounded-full bg-slate-100 dark:bg-slate-800">
+                🌓
+            </button>
+            <a href="confessions.html" class="hover:text-brandBlue transition font-medium">Confessions</a>
+            <a href="quiz.html" class="hover:text-brandBlue transition font-medium">Quiz</a>
+            <a href="#premium" class="bg-brandOrange text-white px-5 py-2 rounded-lg font-bold">Go Premium</a>
+        </div>
+    </nav>
+
+    <header class="text-center py-20 px-6">
+        <h1 class="text-6xl md:text-8xl font-extrabold text-brandBlue mb-6">
+            MISS KNOW IT ALL
+        </h1>
+        
+        <p class="text-2xl md:text-3xl font-semibold mb-8">
+            <span class="text-black dark:text-white">Your mind matters </span>
+            <span class="text-brandBlue">even when </span>
+            <span class="text-black dark:text-white">you don't have </span>
+            <span class="text-brandBlue">all the answers.</span>
+        </p>
+
+        <p class="max-w-2xl mx-auto text-slate-500 dark:text-slate-400 text-lg mb-10">
+            The ultimate student sanctuary. Whether you need to vent anonymously, track your mood, or get professional burnout support, we’ve built a space where you can be yourself without judgment.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="quiz.html" class="bg-brandBlue text-white px-8 py-4 rounded-full font-bold hover:opacity-90 transition">Take Mental Health Quiz</a>
+            <a href="confessions.html" class="border-2 border-black dark:border-white px-8 py-4 rounded-full font-bold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition">Anonymous Wall</a>
+        </div>
+    </header>
+
+    <section class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 px-6 mb-24">
+        <div class="bg-brandBlue p-10 rounded-3xl text-white text-center shadow-xl">
+            <div class="text-4xl font-extrabold mb-2">1 in 5</div>
+            <p class="font-medium opacity-90">Students Struggle Yearly</p>
+        </div>
+        <div class="bg-brandBlue p-10 rounded-3xl text-white text-center shadow-xl">
+            <div class="text-4xl font-extrabold mb-2">100%</div>
+            <p class="font-medium opacity-90">Anonymous & Secure</p>
+        </div>
+        <div class="bg-brandBlue p-10 rounded-3xl text-white text-center shadow-xl">
+            <div class="text-4xl font-extrabold mb-2">24/7</div>
+            <p class="font-medium opacity-90">Resources Accessible</p>
+        </div>
+    </section>
+
+    <section class="bg-slate-50 dark:bg-slate-800/50 py-16 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12">Explore the Platform</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 font-bold">
+                <a href="#" class="p-6 bg-white dark:bg-slate-800 rounded-2xl shadow-sm hover:text-brandOrange transition border border-slate-100 dark:border-slate-700">Read Articles</a>
+                <a href="#" class="p-6 bg-white dark:bg-slate-800 rounded-2xl shadow-sm hover:text-brandOrange transition border border-slate-100 dark:border-slate-700">Mood Tracker</a>
+                <a href="#" class="p-6 bg-white dark:bg-slate-800 rounded-2xl shadow-sm hover:text-brandOrange transition border border-slate-100 dark:border-slate-700">Blog Feed</a>
+                <a href="#" class="p-6 bg-white dark:bg-slate-800 rounded-2xl shadow-sm hover:text-brandOrange transition border border-slate-100 dark:border-slate-700">Analytics</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="premium" class="py-24 px-6 max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="text-brandOrange font-bold tracking-widest uppercase">Premium Membership</span>
+            <h2 class="text-4xl font-extrabold mt-4">Unlock Your Full Potential</h2>
+        </div>
+
+        <div class="bg-slate-900 dark:bg-black text-white rounded-[40px] overflow-hidden flex flex-col md:flex-row shadow-2xl">
+            <div class="p-12 md:w-1/2 border-b md:border-b-0 md:border-r border-slate-800">
+                <h3 class="text-2xl font-bold mb-6 text-brandOrange">Why Trust Us?</h3>
+                <ul class="space-y-4 text-slate-400">
+                    <li class="flex items-center">✅ Verified Professionals</li>
+                    <li class="flex items-center">✅ End-to-End Encryption</li>
+                    <li class="flex items-center">✅ 10,000+ Students Helped</li>
+                </ul>
+                <div class="mt-10 p-6 bg-slate-800 rounded-2xl">
+                    <p class="text-sm italic">"The weekly report changed how I look at my stress levels."</p>
+                    <span class="text-xs font-bold mt-2 block">— Sarah, CS Major</span>
+                </div>
+            </div>
+            
+            <div class="p-12 md:w-1/2 bg-white text-slate-900">
+                <div class="mb-8">
+                    <span class="text-sm font-bold bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full uppercase">Best Value</span>
+                    <h4 class="text-3xl font-extrabold mt-4">The Reset Plan</h4>
+                    <p class="text-slate-500 mt-2">Everything you need to thrive.</p>
+                </div>
+                <ul class="space-y-3 mb-8 font-medium">
+                    <li>🎧 1-on-1 Audio Convos <span class="float-right text-brandBlue">₹450/session</span></li>
+                    <li>📊 Weekly Emotional Report</li>
+                    <li>🔥 7-Day Burnout Reset Program</li>
+                </ul>
+                <button class="w-full bg-brandBlue text-white py-4 rounded-xl font-bold text-lg hover:bg-blue-700 shadow-lg shadow-blue-200 transition">Get Started Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 text-center max-w-3xl mx-auto">
+        <h2 class="text-slate-400 font-bold uppercase tracking-widest text-sm mb-4">Our Mission</h2>
+        <p class="text-2xl font-semibold leading-relaxed">
+            "We believe that every student deserves a judgment-free zone. Our mission is to combine <span class="text-brandBlue">clinical psychology</span> with <span class="text-brandOrange">modern technology</span> to make mental health support accessible, affordable, and anonymous."
+        </p>
+    </section>
+
+    <footer class="p-10 text-center text-slate-400 border-t border-slate-100 dark:border-slate-800">
+        &copy; 2026 Miss Know It All. Pitch Presentation Prep.
+    </footer>
+
+</body>
+</html>
